@@ -259,9 +259,16 @@ for (let i = 0; i < charactersNames.length; i++) {
     );
   }
 }
-
 console.log("Il risultato è:", charactersNames);
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+console.log("ESERCIZIO 10");
+
+// const randomNum = parseInt(prompt("Choose character of StarWars Saga between 0 and 9"));
+const randomNum = 1;
+console.log(
+  `Choosen number ${randomNum} which belong to the - Character Name is: ${starWarsCharacters[randomNum].name}, The Height is ${starWarsCharacters[randomNum].height}, The Mass is ${starWarsCharacters[randomNum].mass}, The Hair Color is ${starWarsCharacters[randomNum].hair_color}, The Skin Color is ${starWarsCharacters[randomNum].skin_color}, The Eye Color is ${starWarsCharacters[randomNum].eye_color}, The Birthday Year is${starWarsCharacters[randomNum].birth_year}, The Gender is ${starWarsCharacters[randomNum].gender}`
+);
