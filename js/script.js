@@ -241,23 +241,34 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 */
 console.log("ESERCIZIO 9");
 
-console.log(
-  "Lista dei nomi prima di eliminare quelli femminili:",
-  charactersNames
-);
+// console.log(
+//   "Lista dei nomi prima di eliminare quelli femminili:",
+//   charactersNames
+// );
 
+// for (let i = 0; i < charactersNames.length; i++) {
+//   if (
+//     charactersNames[i] === femaleCharacters[0].name ||
+//     charactersNames[i] === femaleCharacters[1].name
+//   ) {
+//     delete charactersNames[i];
+//     console.log(
+//       "Sono stati eliminati dalla lista i nomi:",
+//       femaleCharacters[0].name,
+//       "e",
+//       femaleCharacters[1].name
+//     );
+//   }
+// }
+// console.log("Il risultato è:", charactersNames);
+
+//Metodo Corretto
 for (let i = 0; i < charactersNames.length; i++) {
-  if (
-    charactersNames[i] === femaleCharacters[0].name ||
-    charactersNames[i] === femaleCharacters[1].name
-  ) {
-    delete charactersNames[i];
-    console.log(
-      "Sono stati eliminati dalla lista i nomi:",
-      femaleCharacters[0].name,
-      "e",
-      femaleCharacters[1].name
-    );
+  for (let j = 0; j < femaleCharacters.length; j++) {
+    if (charactersNames[i] === femaleCharacters[j].name) {
+      console.log("CORRISPNDENZA TROVATA!", i, charactersNames[i]);
+      charactersNames[i].splice(i, 1);
+    }
   }
 }
 console.log("Il risultato è:", charactersNames);
