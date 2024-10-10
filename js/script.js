@@ -169,6 +169,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       eyeColor["blue-gray"].push(starWarsCharacters[i]);
       break;
   }
+  // eyeColor.[starWarsCharacters[i]].push(starWarsCharacters[i]); //Metodo alternativo per fare la stessa cosa dello switch case, solo perchè c'è la corrispondenza di nomi tra gli array di eyecolor e la proprietà eye_color di starWarsCharacters
 }
 
 console.log("Occhi Blu: ", eyeColor.blue);
